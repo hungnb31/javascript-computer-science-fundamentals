@@ -39,8 +39,9 @@
 
 <p>Tiếp theo, hãy cùng tìm hiểu về việc phân tích thuật toán bằng cách sử dụng ký hiệu <strong>Big O</strong></p>
 
-<strong>O(1)</strong>
 <hr />
+
+<strong>O(1)</strong>
 <br />
 <p>Function dưới dây gọi là <strong>O(1)</strong> hoặc là <strong>constant time</strong> bởi vì độ phức tạp thuật toán không phụ thuộc vào kích thước dữ liệu của biến đầu vào. Nói cách khác, bất kể kích thước của đầu vào, thời gian chạy của thuật toán sẽ không phát triển vượt ra khỏi kích thước tập biến đầu vào. Trong đa số trường hợp, thời gian chạy của thuật toán gần như bằng nhau bất kể kích thước đầu vào</p>
 
@@ -72,8 +73,9 @@ function logMultiples(num) {
 
 <p>Function <strong>logMultiples</strong> hiển thị 10 số là tích của i và tham số truyền vào. Bất kể tham số truyền vào là bao nhiêu, chỉ 10 số được hiển thị. Nói cách khác, thời gian mỗi lần chương trình chạy lại không ảnh hưởng bởi tham số truyền vào, và function này cũng là function <strong>O(1)</strong></p>
 
-<strong>O(n)</strong>
 <hr />
+
+<strong>O(n)</strong>
 <br />
 <p>Những thuật toán sau là <strong>O(n)</strong> hoặc là <strong>linear time</strong>, bởi vì độ phức tạp thuật toán dựa vào tham số truyền vào</p>
 
