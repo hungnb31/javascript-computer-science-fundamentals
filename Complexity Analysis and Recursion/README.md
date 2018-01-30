@@ -82,3 +82,4 @@ function sayHello(numberOfTimes) {
     }
 }
 ```
+<p>Không giống như function <strong>sayHello</strong> phía trên, function dưới nhận một tham số, </p>
