@@ -10,7 +10,7 @@
   <li>Giải thích sự khác nhau giữa <strong>time complexity</strong> và <strong>space complexity</strong></li>
 </ul>
 
-<h3>Hiệu suất thuật toán</h3>
+<h3>Algorithm Performance</h3>
 <p>Khi bạn làm việc với một giải pháp cho một vấn đề, bạn sẽ thường phải tự hỏi rằng giải pháp của bạn chạy nhanh như thế nào. Không may rằng, có nhiều thứ ảnh hưởng tới tốc độ của chương trình. Ví dụ như, phần cứng trong máy tính của bạn, bộ dữ liệu mà bạn đang sử dụng, chương trình đang chạy trong máy tính của bạn, và thậm chí nhiệt độ xung quanh cũng hoàn toàn có thể làm ảnh hưởng tới chương trình của bạn. Vì vậy, bạn có thể dùng một bộ đo thời gian để đo thời gian chạy của chương trình, điều này cũng có thể hữu ích nhưng nó có thể không phải là một cách đáng tin cậy để so sánh trong một số cách thực hiện khác</p>
 
 <h3>Big O Notation: Background</h3>
