@@ -40,11 +40,47 @@
 <p>Tiếp theo, hãy cùng tìm hiểu về việc phân tích thuật toán bằng cách sử dụng ký hiệu <strong>Big O</strong></p>
 
 <strong>O(1)</strong>
-
+<hr />
+<br />
 <p>Function dưới dây gọi là <strong>O(1)</strong> hoặc là <strong>constant time</strong> bởi vì độ phức tạp thuật toán không phụ thuộc vào kích thước dữ liệu của biến đầu vào. Nói cách khác, bất kể kích thước của đầu vào, thời gian chạy của thuật toán sẽ không phát triển vượt ra khỏi kích thước tập biến đầu vào. Trong đa số trường hợp, thời gian chạy của thuật toán gần như bằng nhau bất kể kích thước đầu vào</p>
 
 ```javascript
 function add(num1, num2, num3) {
    return num1 + num2 + num3;
+}
+```
+
+<p>Trong ví dụ trên, function <strong>add</strong> dù có bao nhiêu tham số truyền vào cũng không làm thay đổi độ phức tạp thuật toán</p>
+
+```javascript
+function sayHello() {
+    for (var i = 0; i < 100; i++) {
+       console.log("Hello");
+    }
+}
+```
+
+<p>Function <strong>sayHello</strong> hiển thị một tin nhắn 100 lần vào console mỗi khi function được gọi. Function này cũng là function <strong>O(1)</strong> và nó không có bất cứ một tham số đầu vào nào</p>
+
+```javascript
+function logMultiples(num) {
+    for (var i = 0; i < 10; i++) {
+        console.log(i * num);
+    }
+}
+```
+
+<p>Function <strong>logMultiples</strong> hiển thị 10 số là tích của i và tham số truyền vào. Bất kể tham số truyền vào là bao nhiêu, chỉ 10 số được hiển thị. Nói cách khác, thời gian mỗi lần chương trình chạy lại không ảnh hưởng bởi tham số truyền vào, và function này cũng là function <strong>O(1)</strong></p>
+
+<strong>O(n)</strong>
+<hr />
+<br />
+<p>Những thuật toán sau là <strong>O(n)</strong> hoặc là <strong>linear time</strong>, bởi vì độ phức tạp thuật toán dựa vào tham số truyền vào</p>
+
+```javascript
+function sayHello(numberOfTimes) {
+    for (var i = 0; i < numberOfTimes; i++) {
+        console.log("Hello");
+    }
 }
 ```
