@@ -2,7 +2,7 @@
 
 ### Part 1
 
-Đơn giản hóa các biểu thức sau đây hết mức có thể:
+Đơn giản hóa các biểu thức sau đây:
 
 1. `O(n + 10)` (result: <strong>O(n)</strong>)
 2. `O(100 * n)` (result: <strong>O(n)</strong>)
