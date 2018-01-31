@@ -24,11 +24,11 @@
 </ul>
 <p>Hãy nhớ kỹ những quy tắc đó và nhìn những ví dụ dưới đây:</p>
 <ul>
-  <li>`O(500 * n) --> O(n)`</li>
-  <li>`O(99999999999) --> O(1)`</li>
-  <li>`O(10*n^2 + 5n + 20) --> O(n^2)`</li>
-  <li>`O(n * n) --> O(n^2)`</li>
-  <li>`O(n*log(n) + 30000 * n) --> O(n * log(n))`</li>
+  <li>O(500 * n) --> O(n)</li>
+  <li>O(99999999999) --> O(1)</li>
+  <li>O(10*n^2 + 5n + 20) --> O(n^2)</li>
+  <li>O(n * n) --> O(n^2)</li>
+  <li>O(n*log(n) + 30000 * n) --> O(n * log(n))</li>
 </ul>
 
 <p>Chú ý vào tất cả các ví dụ trên, các biến số được thay bằng 1 như số 500 ở case đầu tiên, hoặc case 99999999999 ở case thứ 2. Các thành phần nhỏ cũng sẽ bị bỏ qua, ví dụ như ở case thứ 3, các thành phần như 5n + 20 sẽ bị bỏ qua, hằng số 10 sẽ trở thành 1. Quy tắc tương tự cho các trường hợp tiếp theo</p>
