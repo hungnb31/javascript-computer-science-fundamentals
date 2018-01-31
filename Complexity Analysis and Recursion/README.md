@@ -28,8 +28,8 @@
 <ul>
   <li>O(500 * n) --> O(n)</li>
   <li>O(99999999999) --> O(1)</li>
-  <li>O(10*n2 + 5n + 20) --> O(n2)</li>
-  <li>O(n * n) --> O(n2)</li>
+  <li>O(10*n^2 + 5n + 20) --> O(n^2)</li>
+  <li>O(n * n) --> O(n^2)</li>
   <li>O(n*log(n) + 30000 * n) --> O(n * log(n))</li>
 </ul>
 
@@ -82,4 +82,87 @@ function sayHello(numberOfTimes) {
     }
 }
 ```
-<p>Không giống như function <strong>sayHello</strong> phía trên, function dưới nhận một tham số, </p>
+<p>Function <strong>sayHello</strong> nhận một tham số, nó sẽ tùy chỉnh số lần <strong>Hello</strong> được in ra màn hình console. Trong trường hợp này, thời gian chạy của function tỉ lệ thuận với tham số truyền vào. Tham số truyền vào càng lớn thì thời gian chạy càng nhiều. Đặt <strong>numberOfTimes</strong> là <strong>n</strong>, là đầu vào của function, điều này có nghĩa là thời gian chạy của function là <strong>O(n)</strong></p>
+
+```javascript
+function doubleThenTriple(numbers) {
+    var doubled = numbers.map(function(num) {
+        return num * 2;
+    });
+
+    return doubled.map(function(num) {
+        return num * 3;
+    });
+}
+```
+
+<p>Trong ví dụ trên, chúng ta <strong>map</strong> qua dữ liệu đầu vào hai lần. Do vậy bạn có thể nói thời gian chạy là <strong>O(n + n)</strong> hoặc là <strong>O(2 * n)</strong>. Tuy nhiên, trong ký hiệu <strong>big O</strong>, những hằng số sẽ được bỏ qua. Vì vậy, <strong>O(2 * n)</strong> sẽ bằng với <strong>O(n)</strong>. Điều quan trọng ở đây là thời chạy chiếm tỉ lệ tương ứng với kích thước đầu vào chứ không phải là chi tiết tỉ lệ của mối quan hệ</p>
+
+<strong>O(n^2)</strong>
+<br />
+
+```javascript
+function allPairs(arr) {
+    var pairs = [];
+    for (var i = 0; i < arr.length; i++) {
+        for (var j = i + 1; j < arr.length; j++) {
+            pairs.push([arr[i], arr[j]]);
+        }
+    }
+
+    return pairs;
+}
+```
+
+```javascript
+function bubbleSort(arr) {
+  var len = arr.length;
+  var lastSwap;
+  var temp
+  while (len != 0) {
+    lastSwap = 0;
+    for (var i = 1; i < len; i++) {
+      if (arr[i - 1] > arr[i]) {
+        // Swap the two elements
+        temp = arr[i-1];
+        arr[i-1] = arr[i];
+        arr[i] = temp;
+        lastSwap = i;
+      }
+    }
+    len = lastSwap;
+  }
+}
+```
+
+<p>Trong những ví dụ trên, chúng ta lặp qua mỗi thành phần của một mảng, và trong vòng lặp đó, chúng ta lại lặp một lần nữa. Vì vậy, thời gian chạy của function sẽ là <strong>O(n * n)</strong>hoặc là <strong>O(n^2)</strong></p>
+
+<p>Nếu bạn nhìn thấy vòng lặp lồng nhau thì thời gian chạy sẽ là <strong>O(n^(số vòng lặp lồng nhau))</strong>. Nói cách khác, nếu có một vòng lặp thì thời gian chạy là <strong>O(n)</strong>, nếu có hai vòng lặp lồng nhau thì thời gian chạy là <strong>O(n^2)</strong>, nếu có ba vòng lặp lồng nhau thì thời gian chạy là <strong>O(n^3)</strong> và cứ như vậy. Tuy nhiên, quy tắc không phải lúc nào cũng như vậy, xem ví dụ dưới đây:</p>
+
+```javascript
+function logMultiples(n) {
+    for (var num1 = 1; num1 <= n; num1++) {
+        for (var num2 = 1; num2 <= n; num2++) {
+            console.log(num1 * num2);
+        }
+    }
+}
+
+function logSomeMultiples(n) {
+    for (var num1 = 1; num1 < n=; num1++) {
+        for (var num2 = 1; num2 <= Math.min(n, 10); num2++) {
+            console.log(num1 * num2);
+        }
+    }
+}
+```
+
+<p>Function đầu tiên <strong>logMultiples</strong> là <strong>O(n^2)</strong>. Vì thời gian chạy của cả hai vòng lặp đều phụ thuộc vào tham số đầu vào, điều này có nghĩa là cả hai vòng lặp đều là <strong>O(n)</strong> và chúng ta có hai <strong>O(n)</strong> lồng nhau, vì vậy function này sẽ là <strong>O(n^2)</strong></p>
+
+<p>Function thứ hai trong cũng có vẻ là <strong>O(n^2)</strong> nhưng thực ra không phải. Vòng lặp đầu tiên là <strong>O(n)</strong> vì thời gian chạy của nó phụ thuộc vào tham số truyền vào. Còn thời gian chạy của vòng lặp thứ hai lại không phải như vậy, vòng lặp thứ 2 có số vòng lặp tối đa là 10 lần. Vì vậy vòng lặp này sẽ là <strong>O(1)</strong>. Vòng lặp bên ngoài là <strong>O(n)</strong>, vòng lặp bên trong là <strong>O(1)</strong>, như vậy thời gian chạy của function sẽ là <strong>O(n)</strong> chứ không phải là <strong>O(n^2)</strong></p>
+
+<h3>Comparing Common Big O Runtimes</h3>
+
+<p>Trong hình dưới đây, trục X(trục ngang) đại diện cho kích thước đầu vào, trục Y(trục dọc) đại diện cho thời gian chạy thuật toán</p>
+
+<img href="">
