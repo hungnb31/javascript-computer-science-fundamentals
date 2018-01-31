@@ -30,7 +30,7 @@ function logUpTo(n) {
 }
 ```
 
-<strong>Time complexity</strong>: O(n)<br />>
+<strong>Time complexity</strong>: O(n)<br />
 <strong>Space complexity</strong>: O(1)
 
 ```javascript
