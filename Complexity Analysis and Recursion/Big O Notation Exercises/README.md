@@ -30,7 +30,7 @@ function logUpTo(n) {
 }
 ```
 
-<strong>Time complexity</strong>: O(n)
+<strong>Time complexity</strong>: O(n)<br />>
 <strong>Space complexity</strong>: O(1)
 
 ```javascript
@@ -43,7 +43,7 @@ function logAtMost10(n) {
 }
 ```
 
-<strong>Time complexity</strong>: O(1)
+<strong>Time complexity</strong>: O(1)<br />
 <strong>Space complexity</strong>: O(1)
 
 ```javascript
@@ -56,7 +56,7 @@ function logAtLeast10(n) {
 }
 ```
 
-<strong>Time complexity</strong>: O(n)
+<strong>Time complexity</strong>: O(n)<br />
 <strong>Space complexity</strong>: O(1)
 
 ```javascript
@@ -73,7 +73,7 @@ function onlyElementsAtEvenIndex(array) {
 }
 ```
 
-<strong>Time complexity</strong>: O(n)
+<strong>Time complexity</strong>: O(n)<br />
 <strong>Space complexity</strong>: O(n)
 
 ```javascript
@@ -92,5 +92,5 @@ function subtotals(array) {
 }
 ```
 
-<strong>Time complexity</strong>: O(n)
+<strong>Time complexity</strong>: O(n)<br />
 <strong>Space complexity</strong>: O(n)
