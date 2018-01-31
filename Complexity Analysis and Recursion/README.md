@@ -96,7 +96,7 @@ function doubleThenTriple(numbers) {
 }
 ```
 
-<p>Trong ví dụ trên, chúng ta <strong>map</strong> qua dữ liệu đầu vào hai lần. Do vậy bạn có thể nói thời gian chạy là <strong>O(n + n)</strong> hoặc là <strong>O(2 * n)</strong>. Tuy nhiên, trong ký hiệu <strong>big O</strong>, những hằng số sẽ được bỏ qua. Vì vậy, <strong>O(2 * n)</strong> sẽ bằng với <strong>O(n)</strong>. Điều quan trọng ở đây là thời chạy chiếm tỉ lệ tương ứng với kích thước đầu vào chứ không phải là chi tiết tỉ lệ của mối quan hệ</p>
+<p>Trong ví dụ trên, chúng ta <strong>map</strong> qua dữ liệu đầu vào hai lần. Do vậy bạn có thể nói thời gian chạy là <strong>O(n + n)</strong> hoặc là <strong>O(2 * n)</strong>. Tuy nhiên, trong ký hiệu <strong>Big O</strong>, những hằng số sẽ được bỏ qua. Vì vậy, <strong>O(2 * n)</strong> sẽ bằng với <strong>O(n)</strong>. Điều quan trọng ở đây là thời chạy chiếm tỉ lệ tương ứng với kích thước đầu vào chứ không phải là chi tiết tỉ lệ của mối quan hệ</p>
 
 <strong>O(n^2)</strong>
 <br />
@@ -167,4 +167,40 @@ function logSomeMultiples(n) {
 
 <img src="https://github.com/29ff/javascript-computer-science-fundamentals/blob/master/Complexity%20Analysis%20and%20Recursion/image-1.png">
 
-<em style="float: right">(*) Image from <a href="https://www.rithmschool.com">Rithmschool</a></em>
+<em>(*) Image from <a href="https://www.rithmschool.com">Rithmschool</a></em>
+
+<p>Như bạn có thể thấy, khi đầu vào càng lớn thì thời gian thực thi giữa các thuật toán là rất khác nhau</p>
+
+<h3>Across Time and Space</h3>
+
+<p>Cho đến bây giờ, chúng ta chỉ nói về thời gian chạy các thuật toán dựa vào ký hiệu <strong>Big O</strong>. Điều này được gọi là phân tích độ <strong>time complexity</strong>(độ phức tạp thời gian) của thuật toán</p>
+
+<p>Nhưng <strong>Big O</strong> không chỉ nói về độ phức tạp của thời gian trong thuật toán, nó cũng được sử dụng để nói về <strong>space</strong>(bộ nhớ trong hệ thống) mà chương trình yêu cầu. Điều này thường được gọi là phân tích<strong>space complexity</strong>(độ phức tạp về bộ nhớ) trong thuật toán</p>
+
+<p>Chúng ta thường chủ yếu quan tâm vào <strong>auxiliary space complexity</strong>(độ phức tạp bộ nhớ phụ), nghĩa là cần có bao nhiêu bộ nhớ để lưu trữ các biến cần cho chương trình của chúng ta chạy. Hãy nhìn vào ví dụ dưới đây:</p>
+
+```javascript
+function total(array) {
+    var total = 0;
+    for (var i = 0; i < array.length; i++) {
+        total += array[i];
+    }
+    return total;
+}
+```
+
+<p>Trong ví dụ dưới đây, function <strong>total</strong> nhận vào một tham số, và tham số này là một mảng. Chúng ta sẽ coi <strong>n</strong> là độ dài của mảng đó. Chúng ta có thể nhận ra độ phức tạp về thời gian của function đó là <strong>O(n)</strong> vì nó có một vòng lặp lặp qua mảng đầu vào. Tuy nhiên độ phức tạp về bộ nhớ lại là <strong>O(1)</strong>, vì chúng ta chỉ cần một không gian bộ nhớ để lưu biến <strong>total</strong></p>
+
+<p>Dưới đây là một ví dụ khác:</p>
+
+```javascript
+function double(array) {
+    var newArray = [];
+    for (var i = 0; i < array.length; i++) {
+        newArray.push(2 * array[i]);
+    }
+    return newArray;
+}
+```
+
+<p>Với function <strong>double</strong> nhận một tham số là một mảng, lặp qua từng phần tử trong mảng và nhân đôi nó. Trong trường hợp này, cả độ phức tạp về thời gian cũng như độ phức tạp về bộ nhớ đều là <strong>O(n)</strong>. Độ phức tạp về bộ nhớ trong trường hợp này lớn hơn vì chúng ta sẽ cần <strong>n</strong> bộ nhớ cho <strong>n</strong> phần tử trong mảng đầu vào để lưu vào mảng <strong>newArray</strong>.</p>
