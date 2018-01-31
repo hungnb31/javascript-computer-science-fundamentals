@@ -163,7 +163,7 @@ function logSomeMultiples(n) {
 
 <p>Trong hình dưới đây(*), trục X(trục ngang) đại diện cho kích thước đầu vào, trục Y(trục dọc) đại diện cho thời gian chạy thuật toán</p>
 
-<img src="https://github.com/29ff/javascript-computer-science-fundamentals/blob/master/Complexity%20Analysis%20and%20Recursion/image-1.png">
+<img src="https://github.com/29ff/javascript-computer-science-fundamentals/blob/master/Complexity%20Analysis%20and%20Recursion/Introduction%20to%20Big%20O%20Notation/image-1.png">
 
 <em>(*) Image from <a href="https://www.rithmschool.com">Rithmschool</a></em>
 
