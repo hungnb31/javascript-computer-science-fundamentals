@@ -173,11 +173,11 @@ function logSomeMultiples(n) {
 
 <h3>Across Time and Space</h3>
 
-<p>Cho đến bây giờ, chúng ta chỉ nói về thời gian chạy các thuật toán dựa vào ký hiệu <strong>Big O</strong>. Điều này được gọi là phân tích <strong>time complexity</strong>(độ phức tạp thời gian) của thuật toán</p>
+<p>Cho đến bây giờ, chúng ta chỉ nói về thời gian chạy các thuật toán dựa vào ký hiệu <strong>Big O</strong>. Điều này được gọi là phân tích <strong>time complexity</strong> (độ phức tạp thời gian) của thuật toán</p>
 
-<p>Nhưng <strong>Big O</strong> không chỉ nói về độ phức tạp của thời gian trong thuật toán, nó cũng được sử dụng để nói về <strong>space</strong>(bộ nhớ trong hệ thống) mà chương trình yêu cầu. Điều này thường được gọi là phân tích <strong>space complexity</strong>(độ phức tạp về bộ nhớ) trong thuật toán</p>
+<p>Nhưng <strong>Big O</strong> không chỉ nói về độ phức tạp của thời gian trong thuật toán, nó cũng được sử dụng để nói về <strong>space</strong>(bộ nhớ trong hệ thống) mà chương trình yêu cầu. Điều này thường được gọi là phân tích <strong>space complexity</strong> (độ phức tạp về bộ nhớ) trong thuật toán</p>
 
-<p>Chúng ta thường chủ yếu quan tâm vào <strong>auxiliary space complexity</strong>(độ phức tạp bộ nhớ phụ), nghĩa là cần có bao nhiêu bộ nhớ để lưu trữ các biến cần cho chương trình của chúng ta chạy. Hãy nhìn vào ví dụ dưới đây:</p>
+<p>Chúng ta thường chủ yếu quan tâm vào <strong>auxiliary space complexity</strong> (độ phức tạp bộ nhớ phụ), nghĩa là cần có bao nhiêu bộ nhớ để lưu trữ các biến cần cho chương trình của chúng ta chạy. Hãy nhìn vào ví dụ dưới đây:</p>
 
 ```javascript
 function total(array) {
