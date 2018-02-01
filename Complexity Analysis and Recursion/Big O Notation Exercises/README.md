@@ -7,11 +7,11 @@
 1. `O(n + 10)` (result: <strong>O(n)</strong>)
 2. `O(100 * n)` (result: <strong>O(n)</strong>)
 3. `O(25)` (result: <strong>O(1)</strong>)
-4. `O(n^2 + n^3)` (result: <strong>O(n^2 + n^3)</strong>)
+4. `O(n^2 + n^3)` (result: <strong>O(n^3)</strong>)
 5. `O(n + n + n + n)` (result: <strong>O(n)</strong>)
 6. `O(1000 * log(n) + n)` (result: <strong>O(log(n))</strong>)
 7. `O(1000 * n * log(n) + n)` (result: <strong>O(n * log(n))</strong>)
-8. `O(2^n + n^2)` (result: <strong>O(n^2)</strong>)
+8. `O(2^n + n^2)` (result: <strong>O(2^n)</strong>)
 9. `O(5 + 3 + 1)` (result: <strong>O(1)</strong>)
 10. `O(n + n^(1/2) + n^2 + n * log(n)^10)` (result: <strong>O(n * log(n)^10)</strong>)
 
@@ -92,5 +92,5 @@ function subtotals(array) {
 }
 ```
 
-<strong>Time complexity</strong>: O(n)<br />
+<strong>Time complexity</strong>: O(n^2)<br />
 <strong>Space complexity</strong>: O(n)
