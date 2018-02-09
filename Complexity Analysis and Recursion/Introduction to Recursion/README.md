@@ -145,5 +145,5 @@ allRecursive(numbersArray, function(v) {
 
 <h2>Additional Resources</h2>
 
-<a href="https://youtu.be/Mv9NEXX1VHc">Computerphile Recursion</a>
+<a href="https://youtu.be/Mv9NEXX1VHc">Computerphile Recursion</a><br />
 <a href="https://youtu.be/k7-N8R0-KY4">FunFunFunction Recursion</a>
