@@ -97,7 +97,7 @@ all(["1","2",3,"4"], function(val){
 
 <h3>Helper Method Recursion</h3>
 
-<p>Bây giờ hãy cùng xem chúng ta cùng giải quyết vấn đề này bằng việc sử dụng <strong>helper method recursion:</p>
+<p>Bây giờ hãy cùng xem chúng ta cùng giải quyết vấn đề này bằng việc sử dụng <strong>helper method recursion</strong>:</p>
 
 ```javascript
 function allRecursive(array, condition) {
